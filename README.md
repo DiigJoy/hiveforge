@@ -7,8 +7,9 @@ The business model behind the site is documented in [ai_orchestration_business_d
 ## Stack
 
 - React 18
+- TypeScript
 - Vite 5
-- Plain CSS
+- Tailwind CSS
 - Vercel free tier deployment
 
 ## Local Development
@@ -39,8 +40,8 @@ npm run preview
 
 ## Project Structure
 
-- [src/App.jsx](/mnt/c/Estudios/IA_weon/src/App.jsx): landing page content and section structure
-- [src/styles.css](/mnt/c/Estudios/IA_weon/src/styles.css): visual system and responsive layout
+- [src/App.tsx](/mnt/c/Estudios/IA_weon/src/App.tsx): landing page content and section structure
+- [src/index.css](/mnt/c/Estudios/IA_weon/src/index.css): Tailwind entry and base styles
 - [index.html](/mnt/c/Estudios/IA_weon/index.html): app entry and metadata
 - [vercel.json](/mnt/c/Estudios/IA_weon/vercel.json): Vercel framework configuration
 
@@ -63,7 +64,7 @@ dist
 
 ## Content To Replace Before Launch
 
-- Update the company name in [src/App.jsx](/mnt/c/Estudios/IA_weon/src/App.jsx)
+- Update the company name in [src/App.tsx](/mnt/c/Estudios/IA_weon/src/App.tsx)
 - Replace `hello@example.com` with the real contact email
 - Add the final domain, favicon, and social preview metadata
 - If needed, connect the CTA to a form, Calendly, or CRM flow
