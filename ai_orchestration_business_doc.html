@@ -1,0 +1,156 @@
+
+<style>
+  .doc { max-width: 680px; padding: 2rem 0; font-size: 15px; line-height: 1.7; color: var(--color-text-primary); }
+  .cover { border-left: 3px solid #7F77DD; padding: 1rem 1.5rem; margin-bottom: 2.5rem; border-radius: 0; }
+  .cover h1 { font-size: 26px; font-weight: 500; margin: 0 0 4px; }
+  .cover p { font-size: 13px; color: var(--color-text-secondary); margin: 0; }
+  h2 { font-size: 18px; font-weight: 500; margin: 2.5rem 0 0.75rem; border-bottom: 0.5px solid var(--color-border-tertiary); padding-bottom: 6px; }
+  h3 { font-size: 15px; font-weight: 500; margin: 1.5rem 0 0.5rem; }
+  p { margin: 0 0 1rem; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; padding: 2px 10px; border-radius: 20px; margin-right: 6px; margin-bottom: 4px; }
+  .badge-purple { background: #EEEDFE; color: #3C3489; }
+  .badge-teal { background: #E1F5EE; color: #085041; }
+  .badge-coral { background: #FAECE7; color: #712B13; }
+  .badge-gray { background: #F1EFE8; color: #444441; }
+  .card { background: var(--color-background-secondary); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 12px; }
+  .card-title { font-size: 14px; font-weight: 500; margin: 0 0 4px; }
+  .card-body { font-size: 13px; color: var(--color-text-secondary); margin: 0; line-height: 1.6; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 12px; margin-bottom: 1.5rem; }
+  .metric { background: var(--color-background-secondary); border-radius: 8px; padding: 1rem; text-align: center; }
+  .metric-val { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+  .metric-label { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1rem; }
+  .roadmap-step { display: flex; gap: 14px; margin-bottom: 1.25rem; align-items: flex-start; }
+  .step-num { min-width: 28px; height: 28px; border-radius: 50%; background: #EEEDFE; color: #3C3489; font-size: 13px; font-weight: 500; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+  .step-body { flex: 1; }
+  .step-title { font-size: 14px; font-weight: 500; margin: 0 0 2px; }
+  .step-desc { font-size: 13px; color: var(--color-text-secondary); margin: 0; }
+  .warn { background: #FAEEDA; border-radius: 8px; padding: 0.85rem 1.1rem; font-size: 13px; color: #633806; margin: 1rem 0; }
+  .section-divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 2rem 0; }
+  .cta-btn { display: inline-block; cursor: pointer; font-size: 13px; padding: 8px 18px; border: 0.5px solid var(--color-border-secondary); border-radius: 8px; background: transparent; color: var(--color-text-primary); margin-top: 1rem; }
+  .cta-btn:hover { background: var(--color-background-secondary); }
+</style>
+
+<div class="doc">
+
+  <div class="cover">
+    <h1>AI workflow orchestration — service overview</h1>
+    <p>Done-for-you implementation · Target: software & tech companies · Version 1.0</p>
+  </div>
+
+  <h2>What we actually sell</h2>
+  <p>We don't sell AI. We sell <strong>replaced workflows</strong>. A client doesn't pay us because we use RAG or vector databases — they pay us because a task that took 3 days now takes 2 hours, with fewer errors, and following their own conventions automatically.</p>
+  <p>We build custom multi-agent systems that live inside the client's own infrastructure, understand their business logic, and automate the parts of their workflow that eat the most time and introduce the most human error.</p>
+
+  <div class="grid2">
+    <div class="metric"><div class="metric-val">0</div><div class="metric-label">Client data leaves their environment</div></div>
+    <div class="metric"><div class="metric-val">80%</div><div class="metric-label">Context cost reduction via RAG</div></div>
+    <div class="metric"><div class="metric-val">5+</div><div class="metric-label">Specialist agents per implementation</div></div>
+    <div class="metric"><div class="metric-val">∞</div><div class="metric-label">Institutional memory, versioned</div></div>
+  </div>
+
+  <h2>The core technology stack</h2>
+  <p>Every implementation we deliver is built on the same proven architecture, adapted to the client's specific workflow.</p>
+
+  <div class="card">
+    <div class="card-title">Multi-agent orchestration</div>
+    <div class="card-body">An orchestrator agent routes tasks to specialist sub-agents — one for code generation, one for testing, one for review, one for commits. Each agent has a single job and does it well. Built on Google ADK, LangGraph, or CrewAI depending on the complexity of the workflow.</div>
+  </div>
+  <div class="card">
+    <div class="card-title">RAG + vector database</div>
+    <div class="card-body">Instead of loading the company's entire knowledge base into every prompt, agents retrieve only the relevant chunks using semantic search. A query about "authentication" automatically finds "JWT policy", "token rules", and "bearer conventions" — even if worded differently. Faster, cheaper, more precise.</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Short-term + long-term memory separation</div>
+    <div class="card-body">Short-term memory handles the current session — what's happening right now, what's been decided. Long-term memory persists to a database — company conventions, past decisions, team preferences. Agents always have the right context without carrying everything.</div>
+  </div>
+  <div class="card">
+    <div class="card-title">MCP (model context protocol)</div>
+    <div class="card-body">The standardised wiring that connects agents to external tools — GitHub, Jira, Slack, internal APIs, databases. Agents don't just think, they act: open PRs, update tickets, post summaries, trigger pipelines.</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Versioned governance</div>
+    <div class="card-body">Company conventions stored in the vector DB are tagged with versions and timestamps. When conventions change, old workflows still reference the rules that applied at the time. The knowledge base is owned and auditable by the client.</div>
+  </div>
+
+  <h2>Our strongest competitive points</h2>
+
+  <h3>Your data never leaves your environment</h3>
+  <p>We deploy everything on the client's own infrastructure. No third-party cloud, no shared systems, no sensitive business logic sitting on our servers. This is a closer for both tech companies and healthcare clients.</p>
+
+  <h3>We're not selling a generic tool</h3>
+  <p>Most AI vendors sell horizontal platforms that require the client to figure out how to apply them. We study the client's actual workflow, map it to agent tasks, and deliver something that works on day one. The implementation is the product.</p>
+
+  <h3>Institutional memory that scales</h3>
+  <p>When a senior developer leaves, their knowledge usually leaves with them. Our system stores that knowledge in a versioned vector database. New developers, new agents, new team members — all inherit the same context automatically.</p>
+
+  <h3>ROI is measurable from month one</h3>
+  <p>Before we start, we measure baseline: how long does this workflow take, how many errors occur, how much re-work happens. After 30 days, we compare. That delta is the case study we use to sell the next client.</p>
+
+  <h2>Who to target first</h2>
+
+  <div class="card">
+    <div class="card-title">Software agencies & product companies <span class="badge badge-purple">primary target</span></div>
+    <div class="card-body">They already understand AI, have short sales cycles, can evaluate the work themselves, and their biggest pain is developer velocity. Ideal entry point: automate the code review + commit + test workflow. Easy to demo, fast to close.</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Healthcare tech companies <span class="badge badge-teal">secondary target</span></div>
+    <div class="card-body">High willingness to pay, strong need for automation, and our on-premise deployment model solves their data privacy concern immediately. Longer sales cycle due to compliance requirements. Target after first 2-3 software wins give you credibility.</div>
+  </div>
+  <div class="card">
+    <div class="card-title">Who to avoid for now <span class="badge badge-coral">skip</span></div>
+    <div class="card-body">Large enterprises (sales cycles of 12+ months), highly regulated industries without a clear tech buyer, and companies with no existing technical team to collaborate with during implementation.</div>
+  </div>
+
+  <h2>What we need to go for it</h2>
+
+  <div class="roadmap-step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <div class="step-title">A reference implementation</div>
+      <div class="step-desc">Before selling to clients, build one real working system — ideally for your own team or a friendly contact. This becomes your demo, your proof of concept, and your learning ground.</div>
+    </div>
+  </div>
+  <div class="roadmap-step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <div class="step-title">A discovery process</div>
+      <div class="step-desc">A structured way to learn a client's workflow in 1-2 sessions. What are the steps, where is the friction, what are the conventions, who are the stakeholders. This is the business logic intake that drives the implementation.</div>
+    </div>
+  </div>
+  <div class="roadmap-step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <div class="step-title">Standard contracts covering data ownership</div>
+      <div class="step-desc">Since we deploy on client infrastructure, contracts must be explicit about who owns the vector DB, who can modify the governance layer, and what happens when the engagement ends.</div>
+    </div>
+  </div>
+  <div class="roadmap-step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <div class="step-title">A baseline measurement template</div>
+      <div class="step-desc">A simple doc that captures time-per-workflow, error rate, and rework cost before implementation. This is what you use to prove ROI 30 days later — and to close the next deal.</div>
+    </div>
+  </div>
+  <div class="roadmap-step">
+    <div class="step-num">5</div>
+    <div class="step-body">
+      <div class="step-title">One repeatable workflow to specialise in first</div>
+      <div class="step-desc">Don't pitch "any workflow." Pick one — the software development pipeline (PR review, test generation, commit automation) is the most natural fit for a technical team targeting tech companies. Master that, then expand.</div>
+    </div>
+  </div>
+
+  <h2>The roadmap toward SaaS</h2>
+  <p>Done-for-you is the entry point. After 3-5 clients in the same vertical, patterns emerge — the same agent types, the same workflow structure, the same governance needs. At that point you extract those patterns into a configurable platform. The SaaS builds itself from real implementations, not assumptions.</p>
+
+  <div class="warn">
+    The honest cost reality: RAG and memory separation reduce tokens per call significantly, but multi-agent orchestration adds LLM calls per task. Net cost is usually still far below the human labour cost it replaces — but always measure before promising savings to a client.
+  </div>
+
+  <hr class="section-divider"/>
+
+  <p style="font-size: 13px; color: var(--color-text-secondary);">This is a living document. Update target industries and pricing model after first two client implementations.</p>
+
+  <button class="cta-btn" onclick="sendPrompt('Help me build the discovery process questionnaire for onboarding a new client')">Build the client discovery process ↗</button>
+
+</div>
