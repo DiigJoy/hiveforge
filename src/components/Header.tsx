@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import logo from '../assets/aiweon-logo.webp'
+import logo from '../assets/hiveforge-logo-primary.png'
 import type { Locale, Messages, NavKey } from '../i18n/types'
 
 type HeaderProps = {
@@ -33,7 +33,7 @@ export function Header({ locale, messages, onLocaleChange }: HeaderProps) {
     <header className="sticky top-0 z-20 mx-auto w-full max-w-[1180px] py-3 backdrop-blur-md">
       <div className="flex items-center justify-between gap-4 rounded-[22px] border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-4 py-3 shadow-panel sm:px-5 sm:py-4">
         <a className="inline-flex items-center" href="#top">
-          <img alt={messages.brand.name} className="h-[4.25rem] w-auto sm:h-[5rem] lg:h-[5.75rem]" src={logo} />
+          <img alt={messages.brand.name} className="h-12 w-auto sm:h-14 lg:h-16" src={logo} />
         </a>
 
         <div className="hidden items-center gap-6 lg:flex">

@@ -12,7 +12,7 @@ function App() {
   const copy = messages[locale]
 
   return (
-    <div className="relative overflow-hidden bg-shell px-4 text-ink sm:px-6">
+    <div className="relative overflow-hidden bg-shell px-4 text-ink sm:px-6" id="top">
       <div className="pointer-events-none absolute left-[-7rem] top-28 h-80 w-80 rounded-full bg-[var(--color-ambient-left)] blur-[80px]" />
       <div className="pointer-events-none absolute right-[-6rem] top-[28rem] h-96 w-96 rounded-full bg-[var(--color-ambient-right)] blur-[80px]" />
 

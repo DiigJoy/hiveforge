@@ -1,4 +1,4 @@
-import logo from '../assets/aiweon-logo.webp'
+import logo from '../assets/hiveforge-logo-primary.png'
 import type { Messages, NavKey } from '../i18n/types'
 
 type FooterProps = {
@@ -17,7 +17,7 @@ export function Footer({ messages }: FooterProps) {
     <footer className="border-t border-[var(--color-border)] py-10">
       <div className="mx-auto grid w-full max-w-[1180px] gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div>
-          <img alt={messages.brand.name} className="h-24 w-auto sm:h-28 lg:h-32" src={logo} />
+          <img alt={messages.brand.name} className="h-20 w-auto sm:h-24 lg:h-28" src={logo} />
           <p className="mt-3 max-w-[44ch] leading-7 text-mist">{messages.brand.statement}</p>
         </div>
 

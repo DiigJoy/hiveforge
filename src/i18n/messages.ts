@@ -13,8 +13,8 @@ export const messages: Record<Locale, Messages> = {
       },
     },
     brand: {
-      name: 'AIWEON',
-      statement: 'Intelligent automation for growing businesses, deployed with clarity, control, and measurable operational ROI.',
+      name: 'HiveForge',
+      statement: 'HiveForge builds governed AI workflow systems inside client infrastructure, with measurable ROI and operational control.',
     },
     header: {
       nav: {
@@ -120,7 +120,7 @@ export const messages: Record<Locale, Messages> = {
     footer: {
       navLabel: 'Navigate',
       contactLabel: 'Contact',
-      copyright: '© 2026 AIWEON. All rights reserved.',
+      copyright: '© 2026 HiveForge. All rights reserved.',
     },
   },
   es: {
@@ -133,8 +133,9 @@ export const messages: Record<Locale, Messages> = {
       },
     },
     brand: {
-      name: 'AIWEON',
-      statement: 'Automatización inteligente para empresas en crecimiento, con despliegues claros, controlados y ROI operativo medible.',
+      name: 'HiveForge',
+      statement:
+        'HiveForge diseña sistemas de workflows con IA y gobernanza dentro de la infraestructura del cliente, con ROI medible y control operativo.',
     },
     header: {
       nav: {
@@ -240,7 +241,7 @@ export const messages: Record<Locale, Messages> = {
     footer: {
       navLabel: 'Navegación',
       contactLabel: 'Contacto',
-      copyright: '© 2026 AIWEON. Todos los derechos reservados.',
+      copyright: '© 2026 HiveForge. Todos los derechos reservados.',
     },
   },
   pt: {
@@ -253,8 +254,9 @@ export const messages: Record<Locale, Messages> = {
       },
     },
     brand: {
-      name: 'AIWEON',
-      statement: 'Automação inteligente para empresas em crescimento, com implantação clara, controle e ROI operacional mensurável.',
+      name: 'HiveForge',
+      statement:
+        'A HiveForge projeta sistemas de workflow com IA e governança dentro da infraestrutura do cliente, com ROI mensurável e controle operacional.',
     },
     header: {
       nav: {
@@ -360,7 +362,7 @@ export const messages: Record<Locale, Messages> = {
     footer: {
       navLabel: 'Navegação',
       contactLabel: 'Contato',
-      copyright: '© 2026 AIWEON. Todos os direitos reservados.',
+      copyright: '© 2026 HiveForge. Todos os direitos reservados.',
     },
   },
 }

@@ -1,8 +1,8 @@
-# AI Workflow Orchestration Landing Page
+# HiveForge Landing Page
 
-This repository contains the React + Vite landing page for a company that sells custom AI workflow orchestration services.
+This repository contains the React + Vite landing page for HiveForge, a company that sells custom AI workflow orchestration services.
 
-The business model behind the site is documented in [ai_orchestration_business_doc.html](/mnt/c/Estudios/IA_weon/ai_orchestration_business_doc.html). The website turns that service positioning into a deployable marketing page for Vercel.
+The business model behind the site is documented in [ai_orchestration_business_doc.html](./ai_orchestration_business_doc.html). The website turns that service positioning into a deployable marketing page for Vercel.
 
 ## Stack
 
@@ -40,10 +40,10 @@ npm run preview
 
 ## Project Structure
 
-- [src/App.tsx](/mnt/c/Estudios/IA_weon/src/App.tsx): landing page content and section structure
-- [src/index.css](/mnt/c/Estudios/IA_weon/src/index.css): Tailwind entry and base styles
-- [index.html](/mnt/c/Estudios/IA_weon/index.html): app entry and metadata
-- [vercel.json](/mnt/c/Estudios/IA_weon/vercel.json): Vercel framework configuration
+- [src/App.tsx](./src/App.tsx): landing page content and section structure
+- [src/index.css](./src/index.css): Tailwind entry and base styles
+- [index.html](./index.html): app entry and metadata
+- [vercel.json](./vercel.json): Vercel framework configuration
 
 ## Deployment To Vercel
 
@@ -64,7 +64,6 @@ dist
 
 ## Content To Replace Before Launch
 
-- Update the company name in [src/App.tsx](/mnt/c/Estudios/IA_weon/src/App.tsx)
 - Replace `hello@example.com` with the real contact email
-- Add the final domain, favicon, and social preview metadata
+- Add the final domain and social preview metadata
 - If needed, connect the CTA to a form, Calendly, or CRM flow

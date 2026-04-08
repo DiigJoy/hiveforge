@@ -4,7 +4,7 @@
 
 This repository is the marketing landing page for a company that sells custom AI workflow orchestration services.
 
-The website is not the product itself. The website sells the service described in [ai_orchestration_business_doc.html](/mnt/c/Estudios/IA_weon/ai_orchestration_business_doc.html).
+The website is not the product itself. The website sells the service described in [ai_orchestration_business_doc.html](./ai_orchestration_business_doc.html).
 
 The current stack is:
 
